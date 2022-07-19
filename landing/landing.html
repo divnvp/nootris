@@ -5,8 +5,16 @@
     <style type="text/css" media="screen, print">
       @import url("landing.css");
       @font-face {
-        font-family: "Rubik";
-        src: url('./Rubik-VariableFont_wght.ttf');
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url("../Rubik/static/Rubik-Regular.ttf");
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url("../Rubik/static/Rubik-Bold.ttf");
       }
       body {
         padding: 0;
@@ -17,8 +25,162 @@
   </head>
 
   <body>
-    <div class="top-nav">
-      <img src="../pictures/Vector.png">
-    </div>
+    <header>
+      <nav class="top-nav">
+        <img src="../pictures/Vector.png">
+
+        <aside class="top-nav__menu">
+          <button class="top-nav__button">
+            FAQ
+          </button>
+          <button class="top-nav__button">
+            Оплата и доставка
+          </button>
+          <button class="top-nav__button">
+            Возврат
+          </button>
+          <button class="top-nav__button">
+            Исследования
+          </button>
+          <button class="top-nav__button">
+            Личный кабинет
+          </button>
+          <button class="top-nav__button">
+            8 8 (800) 600-09-90
+          </button>
+        </aside>
+
+        <button class="top-nav__button">
+          <img src="../pictures/product.png" />
+          
+          <span class="top-nav__product-count">
+            1
+          </span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="main-aside">
+        <img src="../pictures/top1.png">
+      </aside>
+
+      <section class="main-section">
+        <section class="main-section__preview">
+          <aside class="main-section__images">
+            <img
+              class="main-section__ginger"
+              src="../pictures/ginger.png"
+            >
+  
+            <img
+              class="main-section__nootris"
+              src="../pictures/nootris.png"
+            >
+            
+            <img
+              class="main-section__lemon"
+              src="../pictures/Lemon.png"
+            >
+          </aside>
+  
+          <span class="main-section__title">
+            АКТИВИРУЙ ИММУНИТЕТ!
+          </span>
+  
+          <span class="main-section__description">
+            Всего пять секунд в день помогут укрепить иммунитет 
+            и повысить защитные силы организма
+          </span>
+  
+          <span class="main-section__footer-bold">
+            NOOTRIS ПОМОГАЕТ
+          </span>
+  
+          <span class="main-section__footer-regular">
+            Вашему организму во время пандемии 
+            и сезонных простуд
+          </span>
+        </section>
+
+        <section class="footer">
+          <span class="footer__descripton-white">
+            ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА 
+          </span>
+
+          <span class="footer__descripton-orange">
+            СО СКИДКОЙ -15% ПЕРВЫМ!
+          </span>
+
+          <aside class="footer__price">
+            <del class="footer__price-disabled">
+              750₽
+            </del>
+
+            <span class="footer__price-active">
+              690₽
+            </span>
+          </aside>
+
+          <article class="footer-products">
+            <img
+            class="footer-products__ginger"
+            src="../pictures/ginger.png"
+            >
+
+            <img
+              class="footer-products__nootris"
+              src="../pictures/nootris.png"
+            >
+            
+            <img
+              class="footer-products__vorus"
+              src="../pictures/vorus.png"
+            >
+          </article>
+
+          <article class="footer-products-name">
+            <aside class="footer-products__col">
+              <span class="footer-products__small-name">
+                Содержит 
+              </span>
+              <span
+                class="footer-products__small-name"
+                style="color: #FCB500;"
+              >
+                имбирь
+              </span>
+            </aside>
+            
+            <aside class="footer-products__col">
+              <span class="footer-products__big-name">
+                + Бесплатная доставка 
+              </span>
+              <span class="footer-products__big-orange-name">
+                Специальная цена
+              </span>
+            </aside>
+
+            <aside class="footer-products__col">
+              <span class="footer-products__small-name">
+                Нейтрализует 
+              </span>
+              <span
+                class="footer-products__small-name"
+                style="color: #FCB500;"
+              >
+                вирусы
+              </span>
+            </aside>
+          </article>
+
+          <article class="footer-action">
+            <button class="footer-action__button">
+              Оформить заказ!
+            </button>
+          </article>
+        </section>
+      </section>
+    </main>
   </body>
 </html>

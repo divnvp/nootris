@@ -1,12 +1,313 @@
 .top-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   background-color: #111111;
 
-  height: 80px;
+  height: calc(80px - 18px);
   
   padding: 0 64px;
 }
 
+.top-nav__menu {
+  display: flex;
+  justify-content: space-between;
+
+  margin-right: 76px;
+  margin-left: 104px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  width: 100%;
+}
+
+.top-nav__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: white;
+}
+
+.top-nav__product-count {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 22px;
+  margin-top: -12px;
+
+  width: 16px;
+  height: 16px;
+
+  background: #FCB500;
+
+  border-radius: 50%;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  z-index: 9999;
+}
+
+.main-aside {
+  position: relative;
+  margin-top: -73px;
+
+  z-index: -1;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section__preview {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -100px;
+
+  padding-top: 176px;
+  padding-left: 64px;
+
+  height: calc(872px - 80px - 90px);
+
+  z-index: -2;
+
+  background: #FCDA28;
+}
+
+.main-section__title {
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 152px;
+
+  color: white;
+
+  z-index: 1;
+}
+
+.main-section__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  margin-top: 24px;
+
+  width: 672px;
+}
+
+.main-section__images {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-section__ginger {
+  position: absolute;
+
+  margin-top: 172px;
+  margin-right: 64px;
+
+  width: 496px;
+  height: 408.83px;
+}
+
+.main-section__nootris {
+  position: absolute;
+
+  margin-top: -50px;
+  margin-right: 160px;
+
+  width: 224px;
+  height: 635.29px;
+}
+
+.main-section__lemon {
+  position: absolute;
+
+  margin-top: 350px;
+  margin-right: 243px;
+
+  width: 533px;
+  height: 462.94px;
+}
+
+.main-section__footer-bold {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+
+  margin-top: 120px;
+}
+
+.main-section__footer-regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  margin-top: 16px;
+
+  width: 416px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 926px;
+
+  background-color: #111111;
+
+  z-index: -10;
+}
+
+.footer__descripton-white {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+
+  color: white;
+
+  margin-top: 110px;
+}
+
+.footer__descripton-orange {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+
+  color: #FCB500;
+}
+
+.footer__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 85px;
+}
+
+.footer__price-disabled {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #ADADAD;
+}
+
+.footer__price-active {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+
+  margin-left: 32px;
+
+  color: white;
+}
+
+.footer-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: calc(100% - 176px * 2);
+  height: calc(100% - 480px - 168px);
+
+  padding: 0 176px;
+}
+
+.footer-products__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-products__ginger {
+  width: 193px;
+  height: 168px;
+}
+
+.footer-products__nootris {
+  width: 160px;
+
+  transform: rotate(-90deg);
+}
+
+.footer-products__vorus {
+  width: 192px;
+  height: 160px;
+}
+
+.footer-products-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: calc(100% - 216px * 2);
+
+  padding: 0 216px;
+}
+
+.footer-products__small-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: white;
+}
+
+.footer-products__big-name {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: white;
+}
+
+.footer-products__big-orange-name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FCB500;
+
+  margin-top: 8px;
+}
+
+.footer-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 64px;
+}
+
+.footer-action__button {
+  width: 256px;
+  height: 56px;
+
+  background: #FCB500;
+  border-radius: 7px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  cursor: pointer;
+}
