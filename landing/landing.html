@@ -1,9 +1,16 @@
 <!DOCTYPE html>
   <head lang="ru">
     <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capacity" content="yes">
+
     <title>nootris</title>
     <style type="text/css" media="screen, print">
-      @import url("landing.css");
+      @import url("landing-desktop.css");
+      @import url("landing-mobile.css");
       @font-face {
         font-family: 'Roboto';
         font-style: normal;
@@ -24,10 +31,41 @@
     </style>
   </head>
 
-  <body>
+  <body style="position: relative; overflow: auto;">
     <header>
       <nav class="top-nav">
-        <img src="../pictures/Vector.png">
+        <aside class="top-nav__menu-burger">
+          <input type="checkbox" class="menu__toggle"/>
+          <label class="menu__btn" for="menu__toggle">
+            <span />
+          </label>
+
+          <ul class="menu__box">
+            <li class="menu__item">
+              FAQ
+            </li>
+            <li class="menu__item">
+              Оплата и доставка
+            </li>
+            <li class="menu__item">
+              Возврат
+            </li>
+            <li class="menu__item">
+              Исследования
+            </li>
+            <li class="menu__item">
+              Личный кабинет
+            </li>
+            <li class="menu__item">
+              8 8 (800) 600-09-90
+            </li>
+          </ul>
+        </aside>
+
+        <img
+          class="top-nav__vector"
+          src="../pictures/Vector.png"
+        >
 
         <aside class="top-nav__menu">
           <button class="top-nav__button">
